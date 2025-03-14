@@ -64,12 +64,10 @@ This project utilizes **nine datasets** to predict FIFA 2026 qualification and t
 The datasets will be sourced from **Kaggle, FIFA and Transfermarkt**. The key steps are:  
 
 - **Historical match results (1872-2024)** and **FIFA rankings (1992-2024)** will be downloaded from Kaggle and FIFA.com.  
-- **2026 World Cup qualifier results** will be manually compiled from FIFA.  
+- **2026 World Cup qualifier groups** will be manually compiled from FIFA .  
 - **Goalscorers, team performance, and shootout data** will be obtained from Kaggle.  
 - **Squad market values (2006-2026)** will be collected from Transfermarkt.  
 - All datasets will be **cleaned, standardized, and merged** using Python (**Pandas, NumPy**).  
- 
-
  
 
 

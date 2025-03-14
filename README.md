@@ -33,15 +33,15 @@ This project utilizes **nine datasets** to predict FIFA 2026 qualification and t
 - It provides insight into how a team’s ranking evolved over time.  
 - It helps measure **team strength** and predict match results.  
 
-### 2026 FIFA World Cup Qualifier Results
-- This dataset includes the **current qualification standings** for FIFA 2026.  
-- It tracks each team’s **points, wins, losses, and goal differences**.  
-- It helps determine **which teams have qualified** for the tournament.  
+### 2026 FIFA World Cup Qualifier Groups
+- This dataset includes the **official qualification groups** for the **FIFA 2026 World Cup**.  
+- It contains information on **teams in each group, match schedules, and qualification format**.  
+- Since qualification matches are still ongoing, this data will be used to predict **which teams will qualify** based on historical trends and FIFA rankings.  
 
 ### Goalscorers & Team Performance Data
-- This dataset contains goal statistics from past FIFA World Cups.  
-- It tracks **top scorers, expected goals (xG), offensive and defensive metrics**.  
-- It helps analyze **team attacking and defensive strength**.  
+- This dataset contains **goal statistics** from past FIFA World Cups.  
+- It tracks **total goals scored per team and individual top scorers**.  
+- It helps analyze **offensive performance trends** in international tournaments.  
 
 ### Shootout Data (For Knockout Stage Analysis) 
 - This dataset includes records of **penalty shootouts** from past World Cups.  

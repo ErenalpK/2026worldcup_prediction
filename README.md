@@ -12,7 +12,7 @@ Football has always been a passion of mine, and the FIFA World Cup has been one 
 - Predict the 2026 World Cup winner using historical match data.
 - Analyze significant factors influencing match results, including FIFA rankings, home advantage, and squad strength.
 
-## 📊 Dataset  
+## Dataset  
 
 This project utilizes **nine datasets** to predict FIFA 2026 qualification and the tournament winner. Each dataset is explained below:  
 

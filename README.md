@@ -5,7 +5,8 @@ Predicting the FIFA 2026 World Cup Qualification and Winner
 This project aims to predict which teams will qualify for the FIFA 2026 World Cup and determine the potential tournament winner by analyzing historical international football match data.
 
 ## Research Question
-Can historical performance, FIFA rankings, and squad strength accurately predict the qualification and potential winner of the FIFA 2026 World Cup?
+To what extent can historical performance, FIFA rankings, and squad market value predict the qualification and potential winner of the FIFA 2026 World Cup?
+
 
 ## Motivation  
 Football has always been a passion of mine, and the FIFA World Cup has been one of my favorite sporting events since childhood. The excitement, unpredictability, and high-level competition make it a unique tournament where data-driven insights can help uncover hidden patterns and trends. As someone who aims to build a career at the intersection of **football and data science**, I wanted to use this project as an opportunity to gain hands-on experience in football analytics. By applying **data science techniques to real-world football data**, I hope to develop practical skills that will be useful in my future career.

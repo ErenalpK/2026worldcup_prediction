@@ -62,7 +62,7 @@ This phase applies advanced techniques to predict **qualification and tournament
 - **Machine Learning Models:**  
   - Predicting **2026 World Cup qualification probabilities**.  
   - Identifying **potential winners** using past tournament performance and squad strength.  
-  - Evaluating model accuracy using **appropriate metrics (e.g., accuracy, precision, recall, F1-score, ROC-AUC).**  
+  - Comparing predictions with historical outcomes to evaluate model effectiveness.  
 
 ---
 

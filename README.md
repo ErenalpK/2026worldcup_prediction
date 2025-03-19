@@ -134,7 +134,7 @@ Each dataset will be processed and analyzed through different statistical and ma
 
 The datasets will be sourced from **Kaggle, FIFA and Transfermarkt**. The key steps are:  
 
-- **Historical match results (1872-2024)** and **FIFA rankings (1992-2024)** will be downloaded from Kaggle and FIFA.com.  
+- **Historical match results (1994-2024)** and **FIFA rankings (1992-2024)** will be downloaded from Kaggle and FIFA.com.  
 - **2026 World Cup qualifier groups** will be manually compiled from FIFA.  
 - **Goalscorers, team performance, and shootout data** will be obtained from Kaggle.  
 - **Squad market values (2006-2026)** will be collected from Transfermarkt.  

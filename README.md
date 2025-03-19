@@ -10,57 +10,124 @@ Can historical performance, FIFA rankings, and squad strength accurately predict
 ## Motivation  
 Football has always been a passion of mine, and the FIFA World Cup has been one of my favorite sporting events since childhood. The excitement, unpredictability, and high-level competition make it a unique tournament where data-driven insights can help uncover hidden patterns and trends. As someone who aims to build a career at the intersection of **football and data science**, I wanted to use this project as an opportunity to gain hands-on experience in football analytics. By applying **data science techniques to real-world football data**, I hope to develop practical skills that will be useful in my future career.
 
-## Objectives
-- Predict World Cup 2026 qualification outcomes based on past qualifiers and current group standings.
-- Predict the 2026 World Cup winner using historical match data.
-- Analyze significant factors influencing match results, including FIFA rankings, home advantage, and squad strength.
 
-## Dataset  
+## Methodology
 
-This project utilizes **nine datasets** to predict FIFA 2026 qualification and the tournament winner. Each dataset is explained below:  
+This project follows a structured data science workflow consisting of four main phases:
 
-### Historical World Cup Match Results (1872-2024)
-- This dataset contains all international matches played from **1872 to 2024**.  
-- It includes match date, teams involved, goals scored, and match results (**Win, Draw, Loss**).  
-- It also provides information on the tournament stage (**Group, Knockout, Final**).  
-- This data helps train the model by identifying patterns in match outcomes.  
+### 1. Data Collection & Preprocessing  
+The datasets will be sourced from multiple platforms and structured to ensure consistency in analysis.
 
-### FIFA Rankings (1992-2024)
-- This dataset includes **FIFA rankings and Elo ratings** for national teams from **1992 to 2024**.  
-- It provides insight into how a team’s ranking evolved over time.  
-- It helps measure **team strength** and predict match results.  
+- **Data Sources:**  
+  - **Historical Match Results (1994-2024):** Collected from Kaggle and FIFA.com.  
+  - **FIFA Rankings (1992-2024):** Extracted from FIFA’s official site.  
+  - **2026 FIFA World Cup Qualification Groups:** Manually compiled from FIFA’s records.  
+  - **Squad Market Values (2006-2026):** Gathered from Transfermarkt to assess financial strength.  
 
-### 2026 FIFA World Cup Qualifier Groups
-- This dataset includes the **official qualification groups** for the **FIFA 2026 World Cup**.  
-- It contains information on **teams in each group, match schedules, and qualification format**.  
-- Since qualification matches are still ongoing, this data will be used to predict **which teams will qualify** based on historical trends and FIFA rankings.  
+- **Preprocessing Steps:**  
+  - **Handling Missing Data:** Imputing missing values where necessary and removing inconsistencies.  
+  - **Feature Normalization:** Scaling numerical values such as FIFA rankings and squad market values for uniformity.  
+  - **Filtering Match Data:** Only including **official FIFA-sanctioned** matches (World Cup, qualifiers, and major tournaments).  
 
-### Goalscorers & Team Performance Data
-- This dataset contains **goal statistics** from past FIFA World Cups.  
-- It tracks **total goals scored per team and individual top scorers**.  
-- It helps analyze **offensive performance trends** in international tournaments.  
+---
 
-### Shootout Data (For Knockout Stage Analysis) 
-- This dataset includes records of **penalty shootouts** from past World Cups.  
-- It helps analyze **how teams perform in high-pressure knockout situations**.  
-- It is useful for predicting **tournament knockout round outcomes**.  
+### 2. Exploratory Data Analysis (EDA)  
+This phase focuses on uncovering trends and insights in international football performance.
 
-### Team Name History (Data Cleaning Support) 
-- This dataset ensures **historical team name consistency** for accurate data merging.  
-- It includes **changes in country names** (e.g., Yugoslavia → Serbia, Netherlands Antilles → Curaçao).  
+- **Historical Trends Analysis:**  
+  - Examining past **World Cup performance trends** across teams.  
+  - Analyzing changes in **FIFA rankings over time**.  
 
-### List of FIFA World Cup Finals
-- This dataset contains **past FIFA World Cup final matches** and their results.  
-- It helps analyze trends in **finalist success and championship-winning teams**.  
+- **Key Performance Indicators:**  
+  - Identifying **win rates, goal differences, and home advantage** effects.  
+  - Evaluating how **market value correlates with team performance**.  
 
-### Teams Reaching the Top Four
-- This dataset includes all **semi-finalists and finalists** from past tournaments.  
-- It helps identify **historically strong teams** that consistently reach the final stages.  
+- **Data Visualization Techniques:**  
+  - Heatmaps for correlation analysis.  
+  - Time-series plots for performance evolution.  
+  - Bar charts comparing successful vs. underperforming teams.  
 
-### Squad Market Values (2006-2026)
-- This dataset contains the **total market value of each national team** from **2006 to 2026**.  
-- The data is collected from **Transfermarkt** and represents **player market values** aggregated by team.  
-- It helps estimate **team strength based on financial value**.
+---
+
+### 3. Statistical Analysis & Machine Learning  
+This phase applies advanced techniques to predict **qualification and tournament success**.
+
+- **Statistical Analysis:**
+  
+  - Identifying **key performance factors** that influence match outcomes.  
+  - Examining **historical trends** to detect patterns in team success.  
+  - Identifying statistically significant relationships between **FIFA rankings, squad strength, and World Cup performance**.  
+
+- **Machine Learning Models:**  
+  - Predicting **2026 World Cup qualification probabilities**.  
+  - Identifying **potential winners** using past tournament performance and squad strength.  
+  - Evaluating model accuracy using **appropriate metrics (e.g., accuracy, precision, recall, F1-score, ROC-AUC).**  
+
+---
+
+### 4. Results & Interpretation  
+The final phase interprets the findings and presents them through **data-driven insights**.
+
+- **Probability Rankings:**  
+  - Assigning qualification likelihoods to each team.  
+  - Identifying high-probability contenders and potential underdogs.  
+
+- **Tournament Winner Predictions:**  
+  - Highlighting teams most likely to reach the knockout rounds and finals.  
+
+- **Final Presentation:**  
+  - Visualizing results through **tables, rankings, and charts**.  
+  - Comparing **actual vs. predicted performance** for validation.  
+
+
+
+## How the Data Will Be Used
+
+Each dataset will be processed and analyzed through different statistical and machine learning techniques to predict World Cup qualification and the tournament winner. Below are the key steps for data utilization:
+
+### 1. Match Results (1994-2024)
+   - **Data Preprocessing:**  
+     - Filtering only official FIFA-sanctioned matches (World Cup, Qualifiers, and Continental Tournaments).  
+     - Standardizing team names for consistency.  
+   - **Analysis Approach:**  
+     - Calculating **win percentages, average goals per game, and home/away performance**.  
+     - Examining trends in **goal differentials** and their impact on success.  
+     - Checking correlations between **previous match results and later tournament performance**.  
+
+### 2. Goals Scored & Team Performance
+   - **Data Preprocessing:**  
+     - Merging goal statistics with match results.  
+     - Handling missing data by interpolating values where necessary.  
+   - **Analysis Approach:**  
+     - Computing **goal averages per team per tournament**.  
+     - Measuring the consistency of teams in **scoring goals across different World Cups**.  
+     - Identifying **offensive vs. defensive team profiles** (e.g., high-scoring vs. defensive teams).  
+
+### 3. FIFA Rankings (1992-2024)
+   - **Data Preprocessing:**  
+     - Mapping **historical FIFA rankings** to match results.  
+     - Normalizing ranking scores to compare across different years.  
+   - **Analysis Approach:**  
+     - Checking whether higher-ranked teams perform better in tournaments.  
+     - Applying **regression models** to measure the relationship between ranking changes and performance.  
+
+### 4. Squad Market Value (2006-2026)
+   - **Data Preprocessing:**  
+     - Extracting **team-level total market value** from Transfermarkt.  
+     - Normalizing values to adjust for market inflation.  
+   - **Analysis Approach:**  
+     - Checking whether **higher market value correlates with tournament success**.  
+     - Clustering teams based on **financial strength vs. actual performance**.  
+
+### 5. 2026 FIFA World Cup Qualification Groups
+   - **Data Preprocessing:**  
+     - Extracting qualification results from official FIFA sources.  
+     - Merging with previous World Cup performance data.  
+   - **Analysis Approach:**  
+     - Using **classification models** to predict whether a team will qualify.  
+     - Comparing **historical qualification patterns** with current standings.  
+     - Evaluating which **teams are over/underperforming** relative to past tournaments.  
+
 
 ## Data Collection Plan  
 

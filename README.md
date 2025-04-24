@@ -94,11 +94,11 @@ Rows with missing values were handled appropriately depending on the analysis.
 
 ### 2. Outlier Detection
 
+![Figure 2: Outlier Detection for Total Stage Score](output/Outlier%20Detection.png)
+
 A boxplot was generated to visually inspect potential outliers in total stage scores.  
 A few exceptionally high-performing teams stand out as statistical outliers, especially from UEFA. These include teams like Germany and Brazil.  
 These values were kept in the dataset, as they represent meaningful historical achievements.
-
-![Figure 2: Outlier Detection for Total Stage Score](images/boxplot_outliers.png)
 
 ---
 

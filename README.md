@@ -173,6 +173,71 @@ This multi-line chart tracks the **average stage score** of each confederation a
 This trend confirms a **long-standing performance gap**: Europe and South America consistently advance to later rounds, while other confederations remain limited in tournament depth.
 
 
+## Hypothesis Testing
+
+This section presents two statistical tests designed to investigate historical performance patterns in the FIFA World Cup. Each test is supported with a data visualization and analytical interpretation.
+
+---
+
+### Test 1: UEFA vs. CONMEBOL – Total Stage Score
+
+**Objective**  
+To examine whether UEFA teams have achieved higher cumulative World Cup success than CONMEBOL teams.
+
+**Test Used**  
+Welch’s t-test (one-sided, unequal variances)
+
+**Hypotheses**  
+- **H₀:** CONMEBOL teams have equal or higher total stage scores than UEFA teams.  
+- **H₁:** UEFA teams have higher total stage scores than CONMEBOL teams.
+
+**Visualization**  
+![Figure 1: Total Stage Score by Confederation](images/UEFA%20vs%20CONMEBOL%20Stage%20Scores.png)
+
+**Interpretation**  
+This boxplot compares the total stage scores of CONMEBOL and UEFA teams.  
+CONMEBOL shows a higher median score and more compact performance distribution, while UEFA exhibits greater variance with multiple high-performing outliers.  
+Visually, CONMEBOL appears slightly more consistent and balanced, while UEFA shows larger performance disparities among its teams.
+
+**Statistical Result**  
+- **t-statistic:** –1.082  
+- **p-value (one-sided):** 0.847
+
+**Conclusion**  
+The null hypothesis cannot be rejected.  
+There is no statistically significant evidence that UEFA teams have outperformed CONMEBOL teams in total stage scores.  
+Although UEFA features some exceptionally strong teams, the overall performance is not significantly better than CONMEBOL’s historically consistent success.
+
+---
+
+### Test 2: Correlation Between FIFA Ranking and Stage Score
+
+**Objective**  
+To assess whether there is a relationship between a team’s average FIFA ranking and its World Cup performance (measured as total stage score from 1994 onward).
+
+**Test Used**  
+Spearman Rank Correlation (two-sided)
+
+**Hypotheses**  
+- **H₀:** No monotonic correlation exists between FIFA ranking and stage score.  
+- **H₁:** A monotonic correlation exists.
+
+**Visualization**  
+![Figure 2: Stage Score vs. Average FIFA Ranking](images/Stage%20Score%20vs.%20Average%20FIFA%20Ranking.png)
+
+**Interpretation**  
+This scatter plot reveals a strong inverse relationship: teams with lower FIFA rankings (better ranked) tend to achieve higher stage scores.  
+The downward trend is consistent across confederations, particularly for UEFA and CONMEBOL, whose teams are clustered in the high-performance, low-rank region.  
+This visualization provides preliminary evidence of correlation, later confirmed by statistical testing.
+
+**Statistical Result**  
+- **Spearman’s ρ:** –0.822  
+- **p-value:** < 0.001
+
+**Conclusion**  
+The null hypothesis is rejected.  
+There is a strong and statistically significant negative correlation between FIFA ranking and World Cup performance.  
+This confirms that FIFA rankings are reflective of actual team strength and are predictive of tournament success.
 
 
 

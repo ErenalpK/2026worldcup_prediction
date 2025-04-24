@@ -192,7 +192,7 @@ Welch’s t-test (one-sided, unequal variances)
 - **H₁:** UEFA teams have higher total stage scores than CONMEBOL teams.
 
 **Visualization**  
-![Figure 1: Total Stage Score by Confederation](images/UEFA%20vs%20CONMEBOL%20Stage%20Scores.png)
+![Figure 1: Total Stage Score by Confederation](output/UEFA%20vs%20CONMEBOL%20Stage%20Scores.png)
 
 **Interpretation**  
 This boxplot compares the total stage scores of CONMEBOL and UEFA teams.  
@@ -223,7 +223,7 @@ Spearman Rank Correlation (two-sided)
 - **H₁:** A monotonic correlation exists.
 
 **Visualization**  
-![Figure 2: Stage Score vs. Average FIFA Ranking](images/Stage%20Score%20vs.%20Average%20FIFA%20Ranking.png)
+![Figure 2: Stage Score vs. Average FIFA Ranking](output/Stage%20Score%20vs.%20Average%20FIFA%20Ranking.png)
 
 **Interpretation**  
 This scatter plot reveals a strong inverse relationship: teams with lower FIFA rankings (better ranked) tend to achieve higher stage scores.  

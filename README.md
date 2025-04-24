@@ -157,7 +157,7 @@ This stacked bar chart displays the **sum of all teams' stage scores** per World
 - While Europe and South America still **lead in cumulative performance**, the data suggests **increased competitive presence** from other regions in the knockout stages over the past two decades.
 
 
-### ![Average Stage Score Over Time by Confederation](output/Average%20Stage%20Score%20Over%20Time%20by%20Confederation.png)  
+### ![Figure 5 - Average Stage Score Over Time by Confederation](output/%20Average%20Stage%20Score%20Over%20Time%20by%20Confederation.png)  
 **Figure 5: Average Stage Score Over Time by Confederation**
 
 This multi-line chart tracks the **average stage score** of each confederation across World Cups from 1930 to 2022.

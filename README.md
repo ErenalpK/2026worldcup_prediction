@@ -84,11 +84,11 @@ To understand the data before testing hypotheses, some basic exploratory analysi
 
 ### 1. Missing Value Analysis
 
+![Figure 1: Heatmap of Missing Values](output/Missing%20Value%20Analysis.png)
+
 A heatmap was used to detect missing values in the dataset.  
 While the majority of the data is complete, a few columns — including FIFA rankings and post-1994 stage scores — contain missing entries. These are mostly due to data being unavailable for certain teams or tournaments.  
 Rows with missing values were handled appropriately depending on the analysis.
-
-![Figure 1: Heatmap of Missing Values](images/missing_heatmap.png)
 
 ---
 
@@ -115,24 +115,6 @@ This reflects the dominance of a few elite teams in World Cup history.
 The dataset is mostly complete and includes some meaningful outliers.  
 The distribution of total stage scores is right-skewed, with a few teams consistently performing at a much higher level than the rest.  
 These findings helped shape the next steps in visualization and hypothesis testing.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Findings

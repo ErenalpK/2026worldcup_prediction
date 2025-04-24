@@ -195,9 +195,8 @@ Welch’s t-test (one-sided, unequal variances)
 ![Figure 1: Total Stage Score by Confederation](output/UEFA%20vs%20CONMEBOL%20Stage%20Scores.png)
 
 **Interpretation**  
-This boxplot compares the total stage scores of CONMEBOL and UEFA teams.  
-CONMEBOL shows a higher median score and more compact performance distribution, while UEFA exhibits greater variance with multiple high-performing outliers.  
-Visually, CONMEBOL appears slightly more consistent and balanced, while UEFA shows larger performance disparities among its teams.
+The boxplot comparing total stage scores by confederation reveals that CONMEBOL teams generally have slightly higher and more consistent success in the World Cup. Although UEFA teams include several high-performing outliers, the overall distribution is more spread out, suggesting greater variation in performance levels. In contrast, CONMEBOL teams show a narrower interquartile range and a higher median, indicating that they have delivered more stable and uniformly strong results over time. This pattern visually supports the idea that while UEFA includes both very strong and less competitive teams, CONMEBOL teams tend to perform well more consistently.
+
 
 **Statistical Result**  
 - **t-statistic:** –1.082  
@@ -226,9 +225,7 @@ Spearman Rank Correlation (two-sided)
 ![Figure 2: Stage Score vs. Average FIFA Ranking](output/Stage%20Score%20vs.%20Average%20FIFA%20Ranking.png)
 
 **Interpretation**  
-This scatter plot reveals a strong inverse relationship: teams with lower FIFA rankings (better ranked) tend to achieve higher stage scores.  
-The downward trend is consistent across confederations, particularly for UEFA and CONMEBOL, whose teams are clustered in the high-performance, low-rank region.  
-This visualization provides preliminary evidence of correlation, later confirmed by statistical testing.
+The scatterplot examining the relationship between average FIFA ranking and World Cup stage score reveals a clear negative trend. As a team’s average FIFA ranking improves (i.e., the ranking number decreases), its stage score tends to increase. The majority of teams with high stage scores are concentrated in the lower-left part of the graph, meaning that better-ranked teams generally progress further in the tournament. This relationship holds across different confederations, particularly among UEFA and CONMEBOL teams, and aligns with the expectation that FIFA rankings, despite some limitations, are a meaningful reflection of actual competitive strength in World Cups.
 
 **Statistical Result**  
 - **Spearman’s ρ:** –0.822  

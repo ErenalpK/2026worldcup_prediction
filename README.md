@@ -41,42 +41,9 @@ The datasets were collected from multiple public sources and harmonized to creat
 
 ---
 
-### Exploratory Data Analysis (EDA)
-
-EDA was used to understand long-term performance patterns and compare confederation-level success.
-
-**Visualization Types:**
-- Boxplots for stage score and goal difference by confederation
-- Histograms for win rate and goal difference per game
-- Stacked bar charts for confederation success per year
-- Line charts for average stage score over time
-- Bar charts for comparing averages across groups
-
-These visuals helped highlight historical dominance, variability, and competition trends among confederations.
-
----
 ## Statistical Analysis
 
 The third stage of the project focuses on examining long-term patterns in World Cup performance using statistical methods. The goal is to evaluate whether measurable indicators of success—such as **stage progression**, **win rate**, and **goal difference per game**—reveal systematic advantages between confederations, particularly between **UEFA** and **CONMEBOL**. In addition, statistical tests are used to explore the relationship between team success and **FIFA rankings**.
-
-### Hypothesis Testing
-
-Two key hypothesis tests are conducted in this phase:
-
-#### 1. UEFA vs. CONMEBOL Total Stage Score Comparison
-
-- **Test Type**: Independent-samples *t-test*  
-- **Objective**: Determine if UEFA teams have statistically higher total stage scores than CONMEBOL teams from 1930 to 2022.  
-- **Interpretation**: This test measures whether UEFA teams have consistently advanced further in the tournament across all World Cups.
-
-#### 2. Correlation Between Stage Score and FIFA Rankings
-
-- **Test Type**: *Spearman Rank Correlation*  
-- **Objective**: Assess the relationship between a team’s average FIFA ranking (1994–2022) and its post-1994 tournament stage scores.  
-- **Note**: Since FIFA rankings were introduced in 1992, only tournaments from 1994 onward are included in this analysis.  
-- **Interpretation**: This test evaluates whether better-ranked teams perform better in World Cups.
-
-Appropriate statistical thresholds and p-values are used to evaluate the significance of findings.
 
 ---
 
@@ -107,6 +74,65 @@ Each dataset contributes to answering a specific research question by being tran
   - Visualize and test performance trends (e.g., UEFA vs. CONMEBOL).
 
 These steps enable the use of data not just descriptively, but also to conduct rigorous, testable comparisons that support meaningful insights into long-term patterns of team success at the FIFA World Cup.
+
+
+## Exploratory Data Analysis (EDA)
+
+To understand the data before testing hypotheses, some basic exploratory analysis was conducted. This included checking for missing values, identifying outliers, and examining the distribution of stage scores.
+
+---
+
+### 1. Missing Value Analysis
+
+A heatmap was used to detect missing values in the dataset.  
+While the majority of the data is complete, a few columns — including FIFA rankings and post-1994 stage scores — contain missing entries. These are mostly due to data being unavailable for certain teams or tournaments.  
+Rows with missing values were handled appropriately depending on the analysis.
+
+![Figure 1: Heatmap of Missing Values](images/missing_heatmap.png)
+
+---
+
+### 2. Outlier Detection
+
+A boxplot was generated to visually inspect potential outliers in total stage scores.  
+A few exceptionally high-performing teams stand out as statistical outliers, especially from UEFA. These include teams like Germany and Brazil.  
+These values were kept in the dataset, as they represent meaningful historical achievements.
+
+![Figure 2: Outlier Detection for Total Stage Score](images/boxplot_outliers.png)
+
+---
+
+### 3. Skewness of the Distribution
+
+The skewness of the total stage score distribution was calculated to assess its symmetry.  
+A strong right-skew was observed (**skewness ≈ 1.99**), meaning that most teams have relatively low scores, while a small number have achieved very high totals.  
+This reflects the dominance of a few elite teams in World Cup history.
+
+---
+
+### 4. Summary
+
+The dataset is mostly complete and includes some meaningful outliers.  
+The distribution of total stage scores is right-skewed, with a few teams consistently performing at a much higher level than the rest.  
+These findings helped shape the next steps in visualization and hypothesis testing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Findings

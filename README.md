@@ -117,7 +117,7 @@ The distribution of total stage scores is right-skewed, with a few teams consist
 These findings helped shape the next steps in visualization and hypothesis testing.
 
 
-## Findings
+## Data Visualization
 
 ### ![Stage Score Distribution by Confederation](output/Stage%20Score%20Distribution%20by%20Confederation.png)  
 

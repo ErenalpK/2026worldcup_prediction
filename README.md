@@ -210,10 +210,10 @@ The boxplot comparing total stage scores by confederation reveals that CONMEBOL 
 - **t-statistic:** –1.082  
 - **p-value (one-sided):** 0.847
 
-**Conclusion**  
-The null hypothesis cannot be rejected.  
-There is no statistically significant evidence that UEFA teams have outperformed CONMEBOL teams in total stage scores.  
-Although UEFA features some exceptionally strong teams, the overall performance is not significantly better than CONMEBOL’s historically consistent success.
+**Conclusion:**  
+The null hypothesis cannot be rejected.
+With a test statistic of **t = –1.082** and a **one-sided p-value of 0.847**, there is no statistically significant evidence that UEFA teams have outperformed CONMEBOL teams in terms of total stage score.  
+In fact, the negative t-value slightly favors CONMEBOL. This suggests that historically, UEFA teams have not demonstrated a clear superiority over CONMEBOL in cumulative World Cup performance.
 
 ---
 
@@ -239,12 +239,10 @@ The scatterplot examining the relationship between average FIFA ranking and Worl
 - **Spearman’s ρ:** –0.822  
 - **p-value:** < 0.001
 
-**Conclusion**  
-The null hypothesis is rejected.  
-There is a strong and statistically significant negative correlation between FIFA ranking and World Cup performance.  
-This confirms that FIFA rankings are reflective of actual team strength and are predictive of tournament success.
-
-
+**Conclusion:**  
+The null hypothesis is rejected.
+With a Spearman correlation of **ρ = -0.822** and **p < 0.001**, a very strong and statistically significant negative correlation is observed between a team’s average FIFA ranking and their total stage score (post-1994).  
+This indicates that teams with consistently better FIFA rankings (lower values) tend to perform better in World Cups held since 1994.
 
 
  

@@ -15,7 +15,7 @@ The analysis includes a specific comparison between UEFA and CONMEBOL, two of th
 
 ## Motivation  
 Football has always been a personal passion, and the FIFA World Cup stands out as the most prestigious and exciting tournament in the sport. This project offers an opportunity to combine that enthusiasm with an academic interest in data science. By analyzing historical World Cup data, the goal is to gain deeper insights into how national team success can be quantified and compared over time. This work also reflects a broader interest in football analytics—a growing field where statistical reasoning and data-driven methods are increasingly shaping how the game is understood and strategized. The project serves as a practical step toward building a career at the intersection of football and data science, offering valuable experience in working with real-world sports data and applying exploratory analysis and hypothesis testing in a structured and meaningful way.
-Methodology
+
 
 ## Methodology
 
@@ -27,11 +27,23 @@ The datasets were collected from multiple public sources and harmonized to creat
 - Historical FIFA World Cup results (1930–2022)
 - FIFA Rankings (1994–2024)
 - Confederation membership data
-- Country mapping files for standardization
+
 
 **Preprocessing Steps:**
 - Standardized country names using mapping dictionaries
 - Assigned a stage score (1 to 6) to reflect how far a team advanced in each World Cup
+  Each team's success in a World Cup tournament is quantified using a stage-based scoring system as follows:
+
+  | Tournament Stage     | Score |
+  |-----------------------|-------|
+  | Group Stage Exit      | 1     |
+  | Round of 16           | 2     |
+  | Quarter-Finals        | 3     |
+  | Semi-Finals           | 4     |
+  | Runner-up (Finalist)  | 5     |
+  | Champion (Winner)     | 6     |
+
+  This scoring system ensures a consistent and objective measurement of team performance across tournaments and allows systematic comparisons between teams and confederations.
 - Created key variables per team:
   - `sum_stage_score_full`: Total stage score across all tournaments
   - `win_rate`: Win ratio across all matches

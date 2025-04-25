@@ -31,8 +31,7 @@ The datasets were collected from multiple public sources and harmonized to creat
 
 **Preprocessing Steps:**
 - Standardized country names using mapping dictionaries
-- Assigned a stage score (1 to 6) to reflect how far a team advanced in each World Cup
-  Each team's success in a World Cup tournament is quantified using a stage-based scoring system as follows:
+- Assigned a stage score from 1 to 6 to reflect how far a team advanced in each World Cup, based on the following stage-based scoring system:
 
   | Tournament Stage     | Score |
   |-----------------------|-------|

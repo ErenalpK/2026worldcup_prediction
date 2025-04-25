@@ -8,7 +8,7 @@ The analysis includes a specific comparison between UEFA and CONMEBOL, two of th
 
 ## **Research Question**
 
-**Can national team success in the FIFA World Cup be systematically measured and compared using historical tournament data?**  
+**Can a stage-based scoring system systematically measure and compare national team success in the FIFA World Cup across different confederations?**
 - Are UEFA teams statistically more successful than CONMEBOL teams in the World Cup?  
 - Does FIFA Ranking correlate with tournament performance?
 

@@ -281,7 +281,7 @@ The clustering results provide insights into three distinct groups of national t
 
 The figure below displays the PCA-reduced clustering of teams:
 
-![KMeans PCA Clustering](output.png)
+![Figure: KMeans Clustering of National Teams](output/KMeans%20Clustering%20of%20National%20Teams.png)
 
 The scatter plot clearly shows performance-based clustering, consistent with prior statistical analyses. This supports the hypothesis that historical performance indicators meaningfully separate teams — even without supervision.
 

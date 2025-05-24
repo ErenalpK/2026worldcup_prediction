@@ -255,6 +255,39 @@ The null hypothesis is rejected.
 With a Spearman correlation of **ρ = -0.822** and **p < 0.001**, a very strong and statistically significant negative correlation is observed between a team’s average FIFA ranking and their total stage score (post-1994).  
 This indicates that teams with consistently better FIFA rankings (lower values) tend to perform better in World Cups held since 1994.
 
+## Machine Learning Analysis
+
+To discover performance-based groupings among national teams, unsupervised machine learning methods — **Principal Component Analysis (PCA)** and **KMeans clustering** — were applied.
+
+### Methodology
+
+Three core metrics were selected to represent team performance:
+
+- `avg_rank`: Average FIFA ranking (1994–2022)
+- `win_rate`: Win percentage across World Cup matches
+- `gd_per_game`: Goal difference per match played
+
+These variables were first standardized. Then, **PCA** was used to reduce them into two principal components, preserving over **93%** of the total variance. The reduced data was then clustered using the **KMeans** algorithm with 3 clusters.
+
+### Results and Interpretation
+
+The clustering results provide insights into three distinct groups of national teams:
+
+- **Cluster 0**: Teams with **strong overall performance** — high win rates, positive goal difference, and strong rankings. This includes historically dominant teams like Brazil, Germany, and France.
+- **Cluster 1**: **Mid-tier teams** that show moderate performance — average in all three dimensions.
+- **Cluster 2**: **Lower-performing teams** with negative goal differences, low win rates, and weak rankings — often teams that rarely advance beyond the group stage.
+
+### Visualization
+
+The figure below displays the PCA-reduced clustering of teams:
+
+![KMeans PCA Clustering](output.png)
+
+The scatter plot clearly shows performance-based clustering, consistent with prior statistical analyses. This supports the hypothesis that historical performance indicators meaningfully separate teams — even without supervision.
+
+The unsupervised machine learning results confirm that team performance metrics cluster naturally into elite, mid-level, and lower-tier categories. These findings reinforce insights from exploratory and statistical analyses and demonstrate the power of combining data science with domain knowledge.
+
+
 
  
 

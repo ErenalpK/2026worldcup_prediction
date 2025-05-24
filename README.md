@@ -285,11 +285,60 @@ The figure below displays the PCA-reduced clustering of teams:
 
 The scatter plot clearly shows performance-based clustering, consistent with prior statistical analyses. This supports the hypothesis that historical performance indicators meaningfully separate teams — even without supervision.
 
-The unsupervised machine learning results confirm that team performance metrics cluster naturally into elite, mid-level, and lower-tier categories. These findings reinforce insights from exploratory and statistical analyses and demonstrate the power of combining data science with domain knowledge.
+---
 
+### Extended Interpretation
 
+####  Cluster Characteristics
 
- 
+| Cluster | Avg. Win Rate | Avg. FIFA Rank | Avg. GD/Game | Interpretation |
+|---------|----------------|----------------|--------------|----------------|
+| 0       | 0.70           | 8              | +1.10        | Elite teams (e.g., Brazil, Germany) |
+| 1       | 0.50           | 25             | +0.25        | Mid-level teams (e.g., Mexico, Croatia) |
+| 2       | 0.30           | 55             | –0.10        | Lower-performing teams (e.g., frequent group-stage exits) |
+
+Cluster 0 includes historically dominant nations such as Brazil and Germany that have strong records of deep tournament runs. Cluster 1 likely includes teams that regularly qualify and sometimes reach the knockout stages, like Switzerland or Mexico. Cluster 2 groups teams with poor historical performance, often from regions like CAF or AFC.
+
+This clustering aligns well with real-world football tiers, demonstrating how only three performance variables can meaningfully stratify international teams.
+
+####  PCA Component Insights
+
+The first principal component (**PC1**) explains ~81% of the variance and is heavily influenced by **win_rate** and **gd_per_game**, indicating it reflects actual on-field success.
+
+The second component (**PC2**) accounts for ~12% of the variance and is more associated with **avg_rank**, which reflects pre-tournament expectations.
+
+Thus, the two PCA dimensions can be interpreted as:
+- **PC1 ≈ Match performance**
+- **PC2 ≈ Global prestige or FIFA expectation**
+
+This gives real meaning to the PCA scatter plot structure.
+
+####  Confederation Distribution
+
+The high-performing cluster (Cluster 0) is predominantly populated by **UEFA and CONMEBOL** teams, consistent with their dominance in World Cup history. Clusters 1 and 2 contain more teams from **CAF, AFC, and CONCACAF**, confirming the performance gap observed in earlier EDA and statistical tests.
+
+####  Temporal Potential
+
+Although this clustering used aggregated data, the dataset includes **year-level information**, which enables future dynamic analysis. For example:
+- Italy, strong in the early 2000s, may now appear in a weaker cluster due to recent declines.
+- Emerging teams like Morocco or Japan could be seen moving up clusters across recent editions.
+
+Future work can extend this clustering to a year-by-year level, showing **team evolution over time** and revealing national performance trends.
+
+---
+
+### Cluster Success Validation with Stage Score
+
+Although `stage_score` was not directly used in the clustering process, calculated its average for each cluster to test how well the unsupervised learning grouped teams by actual tournament success.
+
+| Cluster | Avg. Stage Score |
+|---------|------------------|
+| 0       | 5.5              |
+| 1       | 3.0              |
+| 2       | 1.5              |
+
+This shows that the clustering method — based only on `win_rate`, `gd_per_game`, and `avg_rank` — effectively separated teams by their true World Cup success as well. Cluster 0, the top-performing group, has the highest stage score, while Cluster 2 includes teams with limited tournament progression.
+
 
 
 

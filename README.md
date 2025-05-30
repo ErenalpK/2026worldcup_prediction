@@ -19,6 +19,24 @@ Football has always been a personal passion, and the FIFA World Cup stands out a
 
 ## Methodology
 
+### Installation & Reproducibility
+
+To run this project locally:
+
+1. Clone the GitHub repository  
+2. Install the required Python libraries by running:
+
+```
+pip install -r requirements.txt
+```
+
+3. Execute the notebooks in the following order:
+   - `data_process.ipynb` (for preprocessing)
+   - `data_visualization.ipynb` (for charts and figures)
+   - `hypothesis_testing.ipynb` (for statistical testing)
+   - `ml_analysis.ipynb` (for machine learning)
+
+
 ### Data Collection & Preprocessing
 
 The datasets were collected from multiple public sources and harmonized to create a clean master dataset.
@@ -255,6 +273,7 @@ The null hypothesis is rejected.
 With a Spearman correlation of **ρ = -0.822** and **p < 0.001**, a very strong and statistically significant negative correlation is observed between a team’s average FIFA ranking and their total stage score (post-1994).  
 This indicates that teams with consistently better FIFA rankings (lower values) tend to perform better in World Cups held since 1994.
 
+
 ## Machine Learning Analysis
 
 To discover performance-based groupings among national teams, unsupervised machine learning methods — **Principal Component Analysis (PCA)** and **KMeans clustering** — were applied.
@@ -339,6 +358,15 @@ Although `stage_score` was not directly used in the clustering process, calculat
 
 This shows that the clustering method — based only on `win_rate`, `gd_per_game`, and `avg_rank` — effectively separated teams by their true World Cup success as well. Cluster 0, the top-performing group, has the highest stage score, while Cluster 2 includes teams with limited tournament progression.
 
+## Limitations and Future Work
+
+While this project covers a wide temporal range and incorporates strong statistical and machine learning techniques, several limitations remain:
+
+- The analysis is based on cumulative performance; year-by-year variation is not modeled.
+- Only a small set of variables (win rate, GD, and FIFA ranking) were used for clustering; other variables like possession, xG, or player-level stats could improve accuracy.
+- Confederation-level analysis may obscure country-level anomalies (e.g., Morocco 2022).
+
+In future work, time-series clustering can be applied to track the evolution of team performance over time. Incorporating additional performance metrics from player-level datasets (e.g., Opta) may also enhance team profiling accuracy.
 
 
 
